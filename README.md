@@ -3,7 +3,7 @@
 ### So, if you are planning to use this repository for your own final year minor/major projects, then, unfortunately, you can not use this repository to submit because it was already submitted by me in the first place. This repository is only made available by me for any improvements you want to add or suggest. If I get to know that someone is using this repository as their project, then, unfortunately I would have to report this "unauthorised copying/project already built scenario" to your university/college.
 ### So, kindly do not fork this repository if you want to use it as your project. This repository is the author's own intellectual property, and it is only made available for the purpose of knowledge-sharing; and not unauthorised ownership.</i>
 ##
-### This back-end also hosts the web version of the online summarizer [here](https://ytsum.herokuapp.com/web/).
+### This back-end also hosts the web version of the online summarizer [here](https://yt-ts-sum.herokuapp.com/web/).
 **YouTube Video Transcript Summarization over Flask:** This back-end uses Flask framework to receive API calls from the client and then respond with the summarized text response. This API can work only on those YouTube videos which have well-formatted closed captions in it. The same backend also hosts a web version of the Summarizer to make those API calls in simple way and show the output within the webpage.
 
 ![](/readme_images/image_cover_f.png)
@@ -24,10 +24,10 @@ In this way, we would make summarizer accessible in many ways, and reducing user
 
 ### More information about the backend
 There are four endpoints:
-* `/` (Root Endpoint): It displays a general purpose introductory webpage and also provides links to web summarizer and API information. You can go to this point [here](https://ytsum.herokuapp.com/).
-* `/web/` (Web Summarizer Endpoint): It displays the web version of the summarizer tool. The webpage has input elements and a summarize button. After clicking summarize, the `API` is called and the response is displayed to the user. You can go to this endpoint by directly clicking [here](https://ytsum.herokuapp.com/web/).
+* `/` (Root Endpoint): It displays a general purpose introductory webpage and also provides links to web summarizer and API information. You can go to this point [here](https://yt-ts-sum.herokuapp.com/).
+* `/web/` (Web Summarizer Endpoint): It displays the web version of the summarizer tool. The webpage has input elements and a summarize button. After clicking summarize, the `API` is called and the response is displayed to the user. You can go to this endpoint by directly clicking [here] (https://yt-ts-sum.herokuapp.com/web/).
 * `/api/` (API Description Endpoint): The webpage at this endpoint describes basic API information in case you would like to use it. Feel free to learn and use our API in your projects.
-You can go to this endpoint by directly clicking [here](https://ytsum.herokuapp.com/api/).
+You can go to this endpoint by directly clicking [here](https://yt-ts-sum.herokuapp.com/api/).
 * `/summarize/` (API Endpoint): This endpoint is for **API purposes only**. That is why, the response type of the **`GET Request`** at this endpoint is in JSON format.\
 More details about using our API is written below:
   
@@ -46,10 +46,10 @@ More details about using our API is written below:
   
   These values in the query to our server can be used in following manner:
   ```
-  https://ytsum.herokuapp.com/summarize/?id=your-video-id&percent=your-percent&choice=your-summary-choice
+  https://yt-ts-sum.herokuapp.com/summarize/?id=your-video-id&percent=your-percent&choice=your-summary-choice
   ```
   
-  More similar details about sending API request can also be found [here](https://ytsum.herokuapp.com/api/).
+  More similar details about sending API request can also be found [here](https://yt-ts-sum.herokuapp.com/api/).
  
   #### Receiving request from our API
   Once you send a successful API request, our server will take that request and process it. After successful processing, the server will send back the relevant response to the made request. The response sent is always in the **`JSON Format`** and very much similar to below snippet:
